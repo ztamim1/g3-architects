@@ -283,5 +283,9 @@ footer p {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .sponsor-logos img {
+        padding: 10px;
+    }
+
 
 }
