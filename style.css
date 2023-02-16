@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+/* Header area */
+
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.head-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-area h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.head-area p {
+    color: #727272;
+}
+
+.center {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-text-area {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.btn {
+    background-color: #FF900E;
+    border: none;
+    padding: 17px;
+    border-radius: 8px;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-text img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* Features area  */
+
+.feature-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+.team-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 35px;
+}
+
+.team-photo img {
+    max-width: 310px;
+    max-height: 260px;
+}
+
+
+/* Feature list area  */
+
+
+.feature-list-area {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.list-text {
+    width: 90%;
+}
+
+.list-text h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+
+.feature-list-image {
+    background-image: url(images/architect.png);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.list-text-single {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: -4px 6px 20px -11px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: -4px 6px 20px -11px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: -4px 6px 20px -11px rgba(0, 0, 0, 0.67);
+}
+
+.feature-list-btn {
+    position: absolute;
+    bottom: 10px;
+    left: -30px;
+    padding: 20px 45px;
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.feature-list-btn h1 p {
+    font-weight: 700;
+}
+
+/* fact area  */
+.fact-text {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.fact-text p {
+    color: #727272;
+    font-size: 16px;
+}
+
+.fact-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+
+}
+
+.single-fact {
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    line-height: .5;
+
+}
+
+.single-fact:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* Sponsor area  */
+
+.sponsor {
+    text-align: center;
+
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    filter: grayscale(100%);
+    margin-top: 35px;
+
+
+}
+
+.bran-areas {
+    margin-bottom: 40px;
+}
+
+/* Social Media  */
+
+.social {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.single-social {
+    margin-left: 15px;
+
+}
+
+.single-social:hover {
+    color: red;
+}
+
+/* Footer Area  */
+
+footer {
+    background-color: #FFF4E7;
+    padding: 30px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/* Media Responsive  */
+
+/* Mobile device  */
+
+@media screen and (max-width: 576px) {
+
+    .head-area {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .team-photo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-area {
+
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .feature-list-area {
+        flex-direction: column;
+        flex-flow: column-reverse;
+
+    }
+
+    .feature-list-image {
+        height: 500px;
+    }
+
+    .feature-list-btn {
+        position: relative;
+        bottom: -382px;
+        left: -21px;
+    }
+
+    .fact-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
